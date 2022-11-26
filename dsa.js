@@ -773,16 +773,25 @@ let od = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 // data()
 
-let data = "newspaper"
-let store = 0
-let res = (data) => {
-    data.split("").filter((val) => {
-        if (val === "p") {
-            store++
-        }
-    })
-    return data
-}
-res(data)
-console.log(store);
+// let data = "newspaper"
+// let store = 0
+// let res = (data) => {
+//     data.split("").filter((val) => {
+//         if (val === "p") {
+//             store++
+//         }
+//     })
+//     return data
+// }
+// res(data)
+// console.log(store);
+
+// ***unique Stringgit 
+
+let arr = "harhar"
+let s = arr.split("")
+let data = s.filter((ele, index, arr) => {
+    return arr.indexOf(ele) !== index
+})
+console.log(data.join(""));
 
