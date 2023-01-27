@@ -106,7 +106,7 @@
 //     if (flag === true) {
 //         return true
 //     } else {
-//         return false
+//         return  false
 //     }
 // })
 // console.log(check);
@@ -157,7 +157,7 @@
 
 // 5--..................Second Largest Number......................................
 
-// let vb = [1, 6, 3, 78, 2, 45]
+let vb = [1, 6, 3, 78, 2, 45]
 
 // let vz1 = vb[0] //1
 // let vz2 = vb[0] //1
@@ -172,6 +172,14 @@
 //     }
 // }
 // console.log(vz2);
+
+// let fnum = Math.max(...vb)
+// vb.splice(vb.indexOf(fnum), 1)
+// let snum = Math.max(...vb)
+// console.log(snum);
+
+
+
 
 
 
@@ -205,7 +213,7 @@
 //         c = a + b;
 //         a = b;
 //         b = c
-//     }
+//     } 
 // }
 // data(f)
 
@@ -786,12 +794,91 @@ let od = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 // res(data)
 // console.log(store);
 
-// ***unique Stringgit 
+// ***unique Stringgit
 
-let arr = "harhar"
-let s = arr.split("")
-let data = s.filter((ele, index, arr) => {
-    return arr.indexOf(ele) !== index
-})
-console.log(data.join(""));
+// let arr = "harhar"
+// let s = arr.split("")
+// let data = s.filter((ele, index, arr) => {
+//     return arr.indexOf(ele) !== index
+// })
+// console.log(data.join(""));
 
+
+// let data = Promise.race([
+//     new Promise((res, rej) => {
+//         setTimeout(() => {
+//             res("1sec")
+//         }, 1000)
+//     }),
+//     new Promise((res, rej) => {
+//         setTimeout(() => {
+//             res("3 sec")
+//         }, 3000)
+//     }),
+//     new Promise((res, rej) => {
+//         setTimeout(() => {
+//             res("3 sec")
+//         }, 3000)
+//     })
+// ]).then((val) => {
+//     console.log(val);
+// }).catch((error) => {
+//     console.log(error);
+// })
+// console.log(data);
+
+
+
+
+
+// **************Practice_extra array related question************************
+// 1---
+// let is_array = (data) => {
+//     if (Array.isArray(data)) {
+//         return true
+//     } else {
+//         return false
+//     }
+// }
+// console.log(is_array('w3resource'));
+// console.log(is_array([1, 2, 4, 0]));
+
+// 2---------
+
+// let array_Clone = (data) => {
+//     return data.slice(0)
+// }
+// console.log(array_Clone([1, 2, 4, 0]));
+// console.log(array_Clone([1, 2, [4, 0]]));
+
+// 3--------------
+
+// let first = (data, num = 1) => {
+//     return data.slice(0, num)
+// }
+// console.log(first([7, 9, 0, -2]));
+// console.log(first([], 3));
+// console.log(first([7, 9, 0, -2], 3));
+// console.log(first([7, 9, 0, -2], 6));
+// console.log(first([7, 9, 0, -2], -3));
+
+
+// 4-
+
+// let last = (data, num = 1) => {
+//     return data.slice(-num)
+// }
+// console.log(last([7, 9, 0, -2]));
+// console.log(last([7, 9, 0, -2], 3));
+// console.log(last([7, 9, 0, -2], 6));
+
+// 5-
+
+// let myColor = ["Red", "Green", "White", "Black"];
+
+// let data1 = myColor.toString()
+// let data2 = myColor.join()
+// let data3 = myColor.join("+")
+// console.log(data1);
+// console.log(data2);
+// console.log(data3);
