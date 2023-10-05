@@ -827,6 +827,27 @@ let od = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 // })
 // console.log(data);
 
+// 34-function currying nth sum
+
+// let sum = (a) => {
+//     return function (b) {
+//         if (b) {
+//             return sum(a + b)
+//         }
+//         return a
+//     }
+// }
+// console.log(sum(10)(20)(30)(40)());
+
+// 35-dublicate string
+let a="sagarr"
+    let res = a.split("").filter((value, index, array) => {
+        return array.indexOf(value) === index
+    }).join("")
+    console.log(res);
+
+
+
 
 
 
