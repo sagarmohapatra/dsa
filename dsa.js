@@ -57,7 +57,7 @@
 //                 i++;
 //                 array[i] = array[j]
 //             }
-//         }
+//          }
 //         return i + 1
 //     } else {
 //         throw new Error("Array is empty")
@@ -122,7 +122,7 @@
 //     for (let i = 0; i < arr.length; i++) {
 
 //         for (let j = 0; j < (arr.length - 1 - i); j++) {
-//             debugger
+//             debugger 
 //             if (arr[j] > arr[j + 1]) {
 //                 let temp = arr[j]
 //                 arr[j] = arr[j + 1]
@@ -133,18 +133,20 @@
 //     }
 //     console.log(arr);
 // }
-// bubble(arr);
+// bubble(arr);   
 
 
 //4-- ...................First Largest number..............................
 
-// let array = [1, 34, 67, 89, 999, 2, 78]
+// 
+
+
 // let sag = (array) => {
 //     let f = array[0]
 //     for (let i = 0; i < array.length; i++) {
 //         if (f < array[i]) {
 //             f = array[i]
-//         }
+ //         }
 //     }
 //     console.log(f);
 // }
@@ -157,7 +159,7 @@
 
 // 5--..................Second Largest Number......................................
 
-let vb = [1, 6, 3, 78, 2, 45]
+// let vb = [1, 6, 3, 78, 2, 45]
 
 // let vz1 = vb[0] //1
 // let vz2 = vb[0] //1
@@ -316,7 +318,7 @@ let vb = [1, 6, 3, 78, 2, 45]
 
 //10---- ODD AND EVEN
 
-let od = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// let od = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 // let even = od.filter((val) => {
 //     return (val % 2 === 0)
 // })
@@ -388,7 +390,7 @@ let od = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 // "hello"->"llheo"
 
 // condition
-// length check
+// length check 
 // string "hello"
 // {h:1,e:1,l:2,o:1}
 
@@ -475,7 +477,7 @@ let od = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 //     val.split("").map((data) => {
 //         if (data === "p") {
 //             count++
-//         }
+//         } 
 //         return data
 //     })
 //     return val
@@ -523,7 +525,7 @@ let od = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 //         return pre.length > cur.length ? pre : cur
 //     })
 //     return newdata
-// }
+// } 
 // console.log(findlargest("my name is sagar"));
 
 
@@ -781,27 +783,10 @@ let od = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 // data()
 
-// let data = "newspaper"
-// let store = 0
-// let res = (data) => {
-//     data.split("").filter((val) => {
-//         if (val === "p") {
-//             store++
-//         }
-//     })
-//     return data
-// }
-// res(data)
-// console.log(store);
 
 // ***unique Stringgit
 
-// let arr = "harhar"
-// let s = arr.split("")
-// let data = s.filter((ele, index, arr) => {
-//     return arr.indexOf(ele) !== index
-// })
-// console.log(data.join(""));
+
 
 
 // let data = Promise.race([
@@ -828,57 +813,266 @@ let od = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 // console.log(data);
 
 
+// -Object method///////////////////////////////////////////////////////////////////////
+// 1-average age 
+ let obj = [
+        { name: "sagar", age: 24 },
+        { name: "rohit", age: 29 },
+        { name: "ram", age: 24 },
+        { name: "dhoni", age: 20 }
+    ]
+
+// let data=obj.map(res=> res.age).reduce((acc,pre)=>acc+pre/obj.length)
+// console.log(data);//average age of object
+// let data2=obj.map(res=>res.age).reduce((acc,pre)=>acc>pre ?acc:pre)
+// console.log(data2);//largest age and small age
 
 
+//2-- largest price value///////////////////////////////////////////
+// const products = [
+//   { name: 'Laptop', price: 800 },
+//   { name: 'Phone', price: 500 },
+//   { name: 'Tablet', price: 300 },
+// ];
 
-// **************Practice_extra array related question************************
-// 1---
-// let is_array = (data) => {
-//     if (Array.isArray(data)) {
-//         return true
-//     } else {
-//         return false
+// let rt=products.reduce((max,may)=>may.price >max.price ? may:max)
+// console.log(rt);
+
+//--3--- merge all product but not same product
+
+// const store1Products = [
+//     { name: 'Laptop', price: 800 },/////////////////////////////////////////////////////////////
+//     { name: 'Phone', price: 500 },
+// ];
+
+// const store2Products = [
+//     { name: 'Phone', price: 450 },
+//     { name: 'Tablet', price: 300 },
+// ];
+
+// let p=[...store1Products,...store2Products].reduce((uniqe,id)=>{
+//     if(!uniqe.some(p=>p.name===id.name)){
+//         uniqe.push(id)
 //     }
+//     return uniqe
+// },[])
+// console.log(p);
+
+//----4-----------Calculating Object Property Sum:
+
+// const expenses = [/////////////////////////////////////////////////////////////////////////////
+//     { category: 'Food', amount: 50 },
+//     { category: 'Transport', amount: 30 },
+//     { category: 'Food', amount: 20 },
+// ];
+
+// let count = expenses.reduce((acc, value) => {
+//     acc[value.category] = (acc[value.category] || 0) + value.amount
+//     return acc
+// }, {})
+// console.log(count);
+
+
+//----5-----------Finding Common Property:
+
+// const users1 = [/////////////////////////////////////////////////////////////////////////////////////////
+//   { name: 'Alice', email: 'alice@example.com' },
+//   { name: 'Bob', email: 'bob@example.com' },
+// ];
+
+// const users2 = [
+//   { name: 'Charlie', email: 'charlie@example.com' },
+//   { name: 'Bob', email: 'bob@example.com' },
+// ];
+
+// let ress=users1.map(na=>na.email)
+// .filter(email=>users2.some(p=>p.email===email))
+// console.log(ress);
+
+
+//-------6----------Replacing Object Property:
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// const books = [
+//     { title: 'Book 1', author: 'Author 1', year: 1990 },
+//     { title: 'Book 2', author: 'Author 2', year: 2005 },
+//   ];
+
+//   let rep=books.map(res=>({
+//     ...res,
+//     author:res.year<2000 ? "Anonomous":res.year
+//   }))
+//   console.log(rep);
+
+
+// /----7-----------Object Property Manipulation:
+// const employees = [
+//   { name: 'Alice', salary: 50000 },////////////////////////////////////////////////////////////
+//   { name: 'Bob', salary: 60000 },
+// ];
+
+// const salaryIncreasePercentage = 10;
+// let ress=employees.map((res)=>({
+//     ...res,
+//     salary:res.salary*(1+salaryIncreasePercentage/100)
+// }))
+// console.log(ress);
+
+//  return method
+// let cv=employees.map((res)=>{
+//     return res.salary*(1+salaryIncreasePercentage/100)
+
+// })
+// console.log(cv);
+
+
+// ---------8------------- const array = [1,3,12,4,5,67,8,10];
+// let red=(array,a)=>{
+// let fin=array.indexOf(a) 
+// if(array.includes(a)){
+//     return `element found of ${a} in index ${fin}`
+// }else{
+//     return `element not found ${a}`
 // }
-// console.log(is_array('w3resource'));
-// console.log(is_array([1, 2, 4, 0]));
-
-// 2---------
-
-// let array_Clone = (data) => {
-//     return data.slice(0)
 // }
-// console.log(array_Clone([1, 2, 4, 0]));
-// console.log(array_Clone([1, 2, [4, 0]]));
+// console.log(red(array,121));
 
-// 3--------------
+// /-------9----------- all array in singale array in an array of object-------------------------------
 
-// let first = (data, num = 1) => {
-//     return data.slice(0, num)
-// }
-// console.log(first([7, 9, 0, -2]));
-// console.log(first([], 3));
-// console.log(first([7, 9, 0, -2], 3));
-// console.log(first([7, 9, 0, -2], 6));
-// console.log(first([7, 9, 0, -2], -3));
+// const objectss = [/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//   { name: "ashit", books: ["abc", "cde", "def"] },
+//   { name: "anil", books: ["pqr", "cde", "rst"] },
+//   { name: "sagar", books: ["abc", "cde", "xyz"] }
+// ];
 
 
-// 4-
+//  let con=objectss.reduce((acc,arr)=>{
+//     return acc.concat(arr.books)
+//  },[])
+//  console.log(con);
 
-// let last = (data, num = 1) => {
-//     return data.slice(-num)
-// }
-// console.log(last([7, 9, 0, -2]));
-// console.log(last([7, 9, 0, -2], 3));
-// console.log(last([7, 9, 0, -2], 6));
 
-// 5-
+//----10------- filter element
+// const objects = [///////// ///////////////////////////////////////////////////////////////////////
+//   { name: "ashit", books: ["abc", "cde", "def"] },
+//   { name: "anil", books: ["pqr", "cde", "rst"] },
+//   { name: "sagar", books: ["abc", "cde", "xyz"] }
+// ];
 
-// let myColor = ["Red", "Green", "White", "Black"];
+// let findAllBooks = objects.reduce((acc,arr)=>{
+//   return acc.concat(arr.books)
+// },[])
+// let filterOfAllDuplicate = findAllBooks.filter((val,ind,array)=>{
+//   return array.indexOf(val) === ind;
+// })
+// let secondMethod = [... new Set(findAllBooks)];
+// console.log(filterOfAllDuplicate)
 
-// let data1 = myColor.toString()
-// let data2 = myColor.join()
-// let data3 = myColor.join("+")
-// console.log(data1);
-// console.log(data2);
-// console.log(data3);
+
+//11-------You are climbing a staircase. It takes n steps to reach the top. Each time you can either climb 1 or 2 steps.
+//  In how many distinct ways can you climb to the top?
+
+// const climbStairs = (n) => {
+//     if (n === 0 || n === 1) {
+//       return 1;
+//     }
+
+//     const dp = new Array(n + 1);
+//     dp[0] = 1;
+//     dp[1] = 1;
+
+//     for (let i = 2; i <= n; i++) {
+//       dp[i] = dp[i - 1] + dp[i - 2];
+//     }
+
+//     return dp[n];
+//   };
+
+//   const steps = 10; // Example: 5 steps
+//   console.log(`Number of ways to climb ${steps} stairs: ${climbStairs(steps)}`);
+
+
+//12---------Object Property Frequency find out
+// const votes = [////////////////////////////////////////////////////////////////////////////////////////////////////////
+// { candidate: 'A' },
+// { candidate: 'B' },
+// { candidate: 'A' },
+// { candidate: 'C' },
+// { candidate: 'B' },
+// ];
+
+// let fre=votes.reduce((acc,arr)=>{
+//     acc[arr.candidate]=(acc[arr.candidate] ||0)+1
+//     return acc
+// },[])
+// console.log(fre);
+
+
+//13----------- Filtering and Mapping:////////////////////////////////////////////////////////////////////////
+// const people = [
+//   { name: 'Alice', age: 25 },
+//   { name: 'Bob', age: 16 },
+//   { name: 'Charlie', age: 20 },
+// ];
+
+// let dd=people.filter(res=>res.age>=20)
+// console.log(dd);
+
+
+//14------------ const products = [//////////////////////////////////////////////////////////////////////////////////////////
+//   { name: 'Laptop', price: 800 },
+//   { name: 'Phone', price: 500 },
+//   { name: 'Tablet', price: 300 },
+// ];
+
+// let sor=products.sort((a,b)=>a.price-b.price)
+// console.log(sor);
+
+// 15----------------//Grouping Objects:
+// const students = [//////////////////////////////////////////////////////////////////////////////////////////
+//   { name: 'Alice', grade: 'A' },
+//   { name: 'Bob', grade: 'B' },
+//   { name: 'Charlie', grade: 'A' },
+// ];
+
+// const groupedStudents = students.reduce((result, student) => {
+//   if (!result[student.grade]) {
+//     result[student.grade] = [];
+//   }
+//   result[student.grade].push(student.name);
+//   return result;
+// }, {});
+
+// console.log(groupedStudents)
+
+
+//16--------------- const books = [
+//       { title: 'Book 1', author: 'Author 1', year: 1990 },
+//       { title: 'Book 2', author: 'Author 2', year: 2005 },
+//     ];
+
+//     let vm=books.map((res)=>({
+// ...res,
+// author:res.year >2000 ? "anonomus":res.author
+//     }))
+//     console.log(vm);
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
