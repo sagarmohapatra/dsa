@@ -812,15 +812,36 @@
 // })
 // console.log(data);
 
+// 34-function currying nth sum
+
+// let sum = (a) => {
+//     return function (b) {
+//         if (b) {
+//             return sum(a + b)
+//         }
+//         return a
+//     }
+// }
+// console.log(sum(10)(20)(30)(40)());
+
+// 35-dublicate string
+let a="sagarr"
+    let res = a.split("").filter((value, index, array) => {
+        return array.indexOf(value) === index
+    }).join("")
+    console.log(res);
+
+
+
 
 // -Object method///////////////////////////////////////////////////////////////////////
 // 1-average age 
- let obj = [
-        { name: "sagar", age: 24 },
-        { name: "rohit", age: 29 },
-        { name: "ram", age: 24 },
-        { name: "dhoni", age: 20 }
-    ]
+//  let obj = [
+//         { name: "sagar", age: 24 },
+//         { name: "rohit", age: 29 },
+//         { name: "ram", age: 24 },
+//         { name: "dhoni", age: 20 }
+//     ]
 
 // let data=obj.map(res=> res.age).reduce((acc,pre)=>acc+pre/obj.length)
 // console.log(data);//average age of object
@@ -1045,7 +1066,7 @@
 // console.log(groupedStudents)
 
 
-//16--------------- const books = [
+//----16--------------- const books = [
 //       { title: 'Book 1', author: 'Author 1', year: 1990 },
 //       { title: 'Book 2', author: 'Author 2', year: 2005 },
 //     ];
