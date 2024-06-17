@@ -825,11 +825,26 @@
 // console.log(sum(10)(20)(30)(40)());
 
 // 35-dublicate string
-let a="sagarr"
-    let res = a.split("").filter((value, index, array) => {
-        return array.indexOf(value) === index
-    }).join("")
-    console.log(res);
+// let a="sagarr"
+//     let res = a.split("").filter((value, index, array) => {
+//         return array.indexOf(value) === index
+//     }).join("")
+//     console.log(res);
+
+// 36- serch in array
+
+// let data=[10,202,303,40,60,70,50,49]
+// console.log(data[]);
+
+// let ser=50
+// let index=[]
+
+// for(let i=0;i<data.length;i++){
+//     if(data[i]===ser){
+//         index+=i
+//     }
+// }
+// console.log(index);
 
 
 
@@ -1076,6 +1091,8 @@ let a="sagarr"
 // author:res.year >2000 ? "anonomus":res.author
 //     }))
 //     console.log(vm);
+
+
 
 
 
