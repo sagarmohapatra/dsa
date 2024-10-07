@@ -560,57 +560,7 @@
 // fn()// out put window
 // new fn() output-{}
 
-// 24--Object
 
-// let obj = [
-//     { name: "sagar", age: 24 },
-//     { name: "rohit", age: 29 },
-//     { name: "ram", age: 24 },
-//     { name: "dhoni", age: 20 }
-// ]
-// let findage = obj.map((val) => val.age)
-// console.log(findage);
-
-// let average = obj.map((val) => val.age).reduce((a, b) => a + b / obj.length)
-// console.log(average);
-
-
-// const someArray = [
-//     {
-//         name: 'Some Item',
-//         id: 12223,
-//         type: {
-//             category: {
-//                 attributes: [
-//                     {
-//                         element: 'earth',
-//                         nature: 'calm',
-//                         power: 2899
-//                     },
-//                     {
-//                         element: 'magic',
-//                         nature: 'feurious',
-//                         power: 1300
-//                     },
-//                     {
-//                         element: 'water',
-//                         nature: 'stable',
-//                         power: 907
-//                     },
-//                 ]
-//             }
-//         }
-//     }
-
-// ]
-
-// let average = someArray.map((val) => val.type.category.attributes.map((ss) => ss.power))
-// console.log(average);
-
-// let average1 = average.flat(1)
-// // console.log(average1);
-// let ww = average1.reduce((a, b) => a + b / average1.length)
-// console.log(ww);
 
 
 // 25---//find 20 positive numbers those are divisble wit 7 and when divide by 2,3,4,5,6 reminder will be 1
@@ -847,9 +797,167 @@
 // console.log(index);
 
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+// 1-check length of array without length use
+
+// let array1=["one","two","three","four","five", "six","seven"];
+// let i=0;
+// while(array1[i]){
+//     i++;
+// }
+// console.log(i);
+
+// 2-string count
+
+// let res = "newspapper";
+
+// let store={}
+// for(let data of res){
+//     store[data]=(store[data]||0)+1
+// }
+// console.log(store);
+
+// let fin=res.reduce((acc,pre)=>{
+
+// })
+
+// 3-
+// const obj={
+//     a:10
+
+// }
+
+// {
+//     obj.a=20
+//     console.log(obj.a);
+//     obj.a=30
+//     console.log(obj.a);
+
+// }
+// console.log(obj.a);
+
+// 4-
+// let str="ftgyhjukilojhdfghjkbhndvbnmxcbvb"
+// let store={}
+
+// for(let data of str){
+//     // console.log(store[data]);
+
+//     store[data]=(store[data]||0)+1
+// }
+// console.log(store);
+
+// reduce method
+// let cvb=str.split('').reduce((acc,pre)=>{
+//     acc[pre] = (acc[pre] || 0) + 1
+//     return acc;
+// },{})
+// console.log(cvb);
+
+// 5-
+// console.log('xyz'.toString() === 'xyz');
+
+// 6-remove the space
+
+// let str = " sdfgt hyjuk dfghj klfghb ";
+
+// let cvb=str.replace(/\s/g, "");
+
+// console.log(cvb);
+
+// let store = "";
+
+// for (let i = 0; i < str.length; i++) {
+//   if (str[i] !== " ") {
+//     store += str[i];
+//   }
+// }
+// console.log(store);
+
+// 7-
+// let str = " sdfgt hyjuk dfghj klfghb ";
+
+// let fin=str.split(" ");
+// let r = '';
+// for (let i = 0; i < fin.length; i++) {
+//    test(fin[i]);
+
+// }
+// function test(e){
+//     if (e !== ' ') {
+//         r += ' '+e.split("").reverse().join('');
+//     }
+//     return r
+// }
+// console.log(r);
+
+
+
+
+
+
+
+
+
 
 
 // -Object method///////////////////////////////////////////////////////////////////////
+
+
+// 24--Object
+
+// let obj = [
+//     { name: "sagar", age: 24 },
+//     { name: "rohit", age: 29 },
+//     { name: "ram", age: 24 },
+//     { name: "dhoni", age: 20 }
+// ]
+// let findage = obj.map((val) => val.age)
+// console.log(findage);
+
+// let average = obj.map((val) => val.age).reduce((a, b) => a + b / obj.length)
+// console.log(average);
+
+
+// const someArray = [
+//     {
+//         name: 'Some Item',
+//         id: 12223,
+//         type: {
+//             category: {
+//                 attributes: [
+//                     {
+//                         element: 'earth',
+//                         nature: 'calm',
+//                         power: 2899
+//                     },
+//                     {
+//                         element: 'magic',
+//                         nature: 'feurious',
+//                         power: 1300
+//                     },
+//                     {
+//                         element: 'water',
+//                         nature: 'stable',
+//                         power: 907
+//                     },
+//                 ]
+//             }
+//         }
+//     }
+
+// ]
+
+// let average = someArray.map((val) => val.type.category.attributes.map((ss) => ss.power))
+// console.log(average);
+
+// let average1 = average.flat(1)
+// // console.log(average1);
+// let ww = average1.reduce((a, b) => a + b / average1.length)
+// console.log(ww);
 // 1-average age 
 //  let obj = [
 //         { name: "sagar", age: 24 },
