@@ -1,4 +1,4 @@
-// Q-1 Checking sum zero 
+// Q-1 Checking sum zero
 // [-5,-4,-3,-2,-1,0,2,4,6,8]
 
 // ans-
@@ -16,7 +16,7 @@
 //     }
 // }
 // const final = Sumzero([-5, -4, -3, -2, -1, 0, 2, 4, 6, 8])
-// console.log(final); 
+// console.log(final);
 
 
 // IMPROVE THE TIME COMPLEX CITY
@@ -69,7 +69,7 @@
 
 //1-- ....................Prime Number OR not a prime number....................
 
-// let prime = 4;
+// let prime = 7;
 // let primecheck = (prime) => {
 //     if (prime <= 1) {
 //         console.log("not a prime number");
@@ -122,7 +122,7 @@
 //     for (let i = 0; i < arr.length; i++) {
 
 //         for (let j = 0; j < (arr.length - 1 - i); j++) {
-//             debugger 
+//             debugger
 //             if (arr[j] > arr[j + 1]) {
 //                 let temp = arr[j]
 //                 arr[j] = arr[j + 1]
@@ -133,12 +133,12 @@
 //     }
 //     console.log(arr);
 // }
-// bubble(arr);   
+// bubble(arr);
 
 
 //4-- ...................First Largest number..............................
 
-// 
+//
 
 
 // let sag = (array) => {
@@ -146,7 +146,7 @@
 //     for (let i = 0; i < array.length; i++) {
 //         if (f < array[i]) {
 //             f = array[i]
- //         }
+//         }
 //     }
 //     console.log(f);
 // }
@@ -215,14 +215,14 @@
 //         c = a + b;
 //         a = b;
 //         b = c
-//     } 
+//     }
 // }
 // data(f)
 
 
 
 
-// synchronous 
+// synchronous
 
 // let fun2 = () => {
 //     console.log("fun2 start");
@@ -267,7 +267,7 @@
 // first(second)
 
 // Hosting
-// hosting is javascript default behavior where variable and function declare to top of the scope brfore the code 
+// hosting is javascript default behavior where variable and function declare to top of the scope brfore the code
 // execution
 // in let and const show the referance error
 // var is display undefine
@@ -298,7 +298,7 @@
 // let dos = Math.floor(Math.random() * 100)
 // console.log(dos);
 
-//9--- reverse 
+//9--- reverse
 
 // let rv = "sagar"
 // let store = ""
@@ -368,11 +368,33 @@
 
 //12-----Dublicate value and remove the dublicate
 
-// let array2 = [1, 3, 4, 15, 19, 18, 5, 5, 4, 18];
+
+
+
 // let duplicateNUmber = array2.filter((ele, index, array2) => {
 //     return array2.indexOf(ele) !== index;
 // })
 // console.log(duplicateNUmber);
+
+// 12.1 ----To find unique elements if they did not  requied repeit number -------
+// let unique = array2.filter((ele, index, array2) => {
+
+//     return array2.indexOf(ele) === array2.lastIndexOf(ele)
+// })
+// console.log(unique);
+
+// get dublicate element
+// 12.2
+// let arr = [1, 2, 3, 34, 4, 5, 6, 7, 7, 8, 8, 8, 9, 9, 9, 9, 9, 9, 90]
+
+
+
+// let res = [...new Set(arr.filter((Element, indexedDB, array) => {
+//     return array.indexOf(Element) !== indexedDB
+// }))]
+// console.log(res);
+
+
 
 
 
@@ -390,7 +412,7 @@
 // "hello"->"llheo"
 
 // condition
-// length check 
+// length check
 // string "hello"
 // {h:1,e:1,l:2,o:1}
 
@@ -477,7 +499,7 @@
 //     val.split("").map((data) => {
 //         if (data === "p") {
 //             count++
-//         } 
+//         }
 //         return data
 //     })
 //     return val
@@ -525,7 +547,7 @@
 //         return pre.length > cur.length ? pre : cur
 //     })
 //     return newdata
-// } 
+// }
 // console.log(findlargest("my name is sagar"));
 
 
@@ -922,6 +944,9 @@
 // console.log(average);
 
 
+
+
+
 // const someArray = [
 //     {
 //         name: 'Some Item',
@@ -958,7 +983,7 @@
 // // console.log(average1);
 // let ww = average1.reduce((a, b) => a + b / average1.length)
 // console.log(ww);
-// 1-average age 
+// 1-average age
 //  let obj = [
 //         { name: "sagar", age: 24 },
 //         { name: "rohit", age: 29 },
@@ -1071,7 +1096,7 @@
 
 // ---------8------------- const array = [1,3,12,4,5,67,8,10];
 // let red=(array,a)=>{
-// let fin=array.indexOf(a) 
+// let fin=array.indexOf(a)
 // if(array.includes(a)){
 //     return `element found of ${a} in index ${fin}`
 // }else{
@@ -1202,9 +1227,111 @@
 
 
 
+// practice
+
+// let a = 8;
+// let res = (a) => {
+//     if (a < 1) {
+//         console.log("not a prime number");
+//     }
+//     let flag = true
+//     for (let i = 2; i < a / 2; i++) {
+//         if (a % 2 === 0) {
+//             flag = false
+//         }
+//     }
+//     if (flag === true) {
+//         console.log("prime number");
+
+//     } else {
+//         console.log("not a prime number");
+
+//     }
+// }
+// res(a)
 
 
- 
+// 12 unique value
+
+// let userDetails = [
+//     {
+//        id:23,
+//        name:'sagar',
+//        age:26,
+//        gender:'male'
+//     },
+//     {
+//        id:23,
+//        name:'sagar',
+//        age:26,
+//        gender:'male'
+//     },
+//     {
+//        id:23,
+//        name:'sagar',
+//        age:26,
+//        gender:'male'
+//     },
+//     {
+//        id:23,
+//        name:'soubhangy',
+//        age:28,
+//        gender:'male'
+//     },
+//     {
+//        id:23,
+//        name:'kumari',
+//        age:26,
+//        gender:'female'
+//     },
+//     {
+//        id:23,
+//        name:'Abhisek',
+//        age:26,
+//        gender:'male'
+//     },
+//     {
+//        id:28,
+//        name:'Abhisek',
+//        age:28,
+//        gender:'male'
+//     },
+//     {
+//        id:26,
+//        name:'Abhisek',
+//        age:26,
+//        gender:'male'
+//     },
+//     ]
+//     let seenObj = new Set();
+//     let duplicateObj = new Set();
+//     // console.log(duplicateObj)
+//     let res = [];
+//     for(let i = 0 ; i <= userDetails.length-1 ; i++){
+//         let json = JSON.stringify(userDetails[i]);
+      
+//         if(seenObj.has(json)){
+            
+//             if(!duplicateObj.has(json)){  // if uniqe is not avilable is here there like id
+                //  res.push(JSON.parse(json));
+//                 duplicateObj.add(json);
+//             }
+//         }else{
+//             seenObj.add(json); //add all uniqe object
+//         }
+//     }
+//     console.log(res);
+
+
+
+
+
+
+
+
+
+
+
 
 
 
