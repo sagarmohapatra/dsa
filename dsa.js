@@ -1227,31 +1227,10 @@
 
 
 
-// practice
-
-// let a = 8;
-// let res = (a) => {
-//     if (a < 1) {
-//         console.log("not a prime number");
-//     }
-//     let flag = true
-//     for (let i = 2; i < a / 2; i++) {
-//         if (a % 2 === 0) {
-//             flag = false
-//         }
-//     }
-//     if (flag === true) {
-//         console.log("prime number");
-
-//     } else {
-//         console.log("not a prime number");
-
-//     }
-// }
-// res(a)
 
 
-// 12 unique value
+
+// 17 unique value
 
 // let userDetails = [
 //     {
@@ -1309,11 +1288,11 @@
 //     let res = [];
 //     for(let i = 0 ; i <= userDetails.length-1 ; i++){
 //         let json = JSON.stringify(userDetails[i]);
-      
+
 //         if(seenObj.has(json)){
-            
+
 //             if(!duplicateObj.has(json)){  // if uniqe is not avilable is here there like id
-                //  res.push(JSON.parse(json));
+//  res.push(JSON.parse(json));
 //                 duplicateObj.add(json);
 //             }
 //         }else{
@@ -1321,6 +1300,54 @@
 //         }
 //     }
 //     console.log(res);
+
+//18- capital only first latter
+// let res = "sagar kumar mohapatra"
+// let cvb = res.split(" ")
+// let res1 = cvb.map((x) => {
+//     return x.charAt(0).toUpperCase() + x.slice(1)
+// })
+// console.log(res1.join(" "));
+
+// let array = [2, 5, 8, 9, 45, 21, 1, 6, 99];
+// //find out the max number of this array element
+// let f1 = array[0]
+// let f2 = array[0]
+
+// for (let i = 0; i < array.length; i++) {
+//     if (f1 < array[i]) {
+//         f1 = f2
+//         f1 = array[i]
+//     } else if (f2 < array[i] || f1 === f2) {
+//         f2 = array[i]
+//     }
+// }
+// console.log(f2);
+
+
+
+// center of the Element
+let array = [2, 5, 8, 9, 45, 21, 1, 6, 99];
+let len = array.length;
+
+for (let i = 0; i < len; i++) {
+    if (len % 2 === 0) {
+        // Even length: 2 middle elements
+        if (i === (len / 2) - 1 || i === len / 2) {
+            console.log("Middle Element:", array[i]);
+        }
+    } else {
+        // Odd length: 1 middle element
+        if (i === Math.floor(len / 2)) {
+            console.log("Middle Element:", array[i]);
+        }
+    }
+}
+
+
+
+
+
 
 
 
